@@ -6,38 +6,37 @@ function Ticket (time, movie, age){
 }
 
 Ticket.prototype.ticketPrice = function () {
-  var price = 5;
+
+var price = 0;
 
   if (this.customerTime === "morning") {
-    price += 0;
-  }
+    return price += 2;
+   }
   else if (this.customerTime === "afternoon"){
-    price += 5;
+    return price += 5;
   }
-  else if (this.customerTime === "night"){
-    price += 10;
-  }
-  return price;
-}
-
-
-
-
-
-
+  else{
+    return price += 10;
+  }}
 
 
 //interface logic
 $(document).ready(function() {
   $(".movieTickets").submit(function(event) {
-    $("#moviePrice").show();
+
   event.preventDefault ();
 
-var inputtedTime = $("#timeList").val();
-var inputtedMovie = $("#movieList").val();
-var inputtedAge= $ ("#ageList").val();
-var Results = new Ticket (inputtedTime, inputtedMovie, inputtedAge);
+var inputTime = $("#timeList").val();
+var inputMovie = $("#movieList").val();
+var inputAge= $ ("#ageList").val();
+var Results = new Ticket (inputTime, inputMovie, inputAge);
+// console.log(Results);
 
+
+$("#moviePrice").show();
+$(".show-movie").text(inputMovie);
+$(".show-time").text(inputTime);
+$(".show-price").text(Results.ticketPrice());
 
   });
 });
