@@ -1,0 +1,32 @@
+#moviePrice {
+  display: none;
+}
+
+
+
+
+.container h1 {
+  margin: 5%;
+  text-align: center;
+  font-size: 60pt;
+  font-weight: bolder;
+  letter-spacing: 3pt;
+}
+
+body {
+  font-family: helvetica;
+  background-color: #F1FEC6;
+  color: #FF3A20;
+}
+
+.form-control#ageInput {
+  width: 25%;
+}
+
+.movieTickets {
+  margin-left: 20%;
+}
+
+.moviePictures {
+  text-align: center;
+}

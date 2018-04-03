@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class = "container">
+      <h1> MOVIE TICKETS </h1>
+        <form class = "movieTickets">
+
+          <div class="moviePictures">
+            <img src="images/image1.jpg" alt="Ready Player One" style="width:300px;">
+          </div>
+
+          <div>
+          <label for="time">Times</label>
+          <br>
+          <select id="timeList">
+            <option>morning</option>
+            <option>afternoon</option>
+            <option>evening</option>
+            <option>night</option>
+          </select>
+          </div>
+          <br>
+          <div>
+          <label for="movies">Movies</label>
+          <br>
+          <select id="movieList">
+            <option>Ready Player One</option>
+            <option>Black Panther</option>
+            <option>A Wrinkle In Time</option>
+            <option>The Shape of Water</option>
+            <option>Pitch Perfect 3</option>
+            <option>Furlough</option>
+            <option>Claire's Camera</option>
+            <option>Happy End</option>
+          </select>
+        </div>
+
+        <div>
+        <label for="age">Age</label>
+        <br>
+        <select id="ageList">
+          <option>infant</option>
+          <option>child</option>
+          <option>adult</option>
+          <option>senior</option>
+        </select>
+        </div>
+
+
+        <button id="submitMovie" type="submit" class="btn btn-primary">Submit</button>
+        <br>
+        <br>
+      </form>
+
+      <div id="moviePrice">
+        <h2>Here's your movie ticket:</h2>
+        <p><span class="price"></span></p>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
